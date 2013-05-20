@@ -1,0 +1,131 @@
+@import url('//fonts.googleapis.com/css?family=Lobster');
+
+/* BASE
+============================================================================= */
+* 							{ box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; }
+
+body 						{ background:#FFF; overflow-y:scroll; }
+
+/* HEADER
+============================================================================= */
+header 						{ background:#326DA8; padding:20px 0; margin-bottom:40px; }
+header h1 a					{ color:rgb(216, 255, 255); font-family:'Lobster'; font-size:50px;
+	text-shadow:1px 1px 0 #00144f; -moz-text-shadow:1px 1px 0 #00144f; -webkit-text-shadow:1px 1px 0 #00144f;
+	transition:0.5s all ease; -moz-transition:0.5s all ease; -webkit-transition:0.5s all ease;
+}
+header h1 a:hover 			{ color:rgb(216, 255, 255); text-decoration:none; }
+
+header h1 a i 					{ color:#00144f; }
+
+/* FOOTER
+============================================================================= */
+footer 						{  }
+	#copyright 				{ margin-bottom:40px; }
+
+/* MAIN
+============================================================================= */
+#main 						{ margin-bottom:40px; }
+
+	/* icons */
+	.page-header h2 i 		{ color:#002d68; }
+	footer h3 i 			{ color:#002d68; }
+
+#color-form 				{ }
+	#color-form input 		{ border:none; border-bottom:2px solid #DDD; color:#DDD; font-size:30px; letter-spacing:1px; line-height:30px; padding:30px 15px; text-transform:uppercase;
+		border-radius:0; -moz-border-radius:0; -webkit-border-radius:0;
+		box-shadow:none; -moz-box-shadow:none; -webkit-box-shadow:none;
+	}
+	#color-form input:focus {
+		box-shadow:none; -moz-box-shadow:none; -webkit-box-shadow:none;
+	}
+
+	/* percentage
+	----------------------------------------------------------------- */
+	#calculated-colors .row-fluid 	{ margin-bottom:15px; }
+	.percentage-box 				{ height:50px; margin:10px 0; width:100%;
+		border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;
+	}
+		#dark-65 .percentage-box 	{ background:#000002; }
+		#dark-45 .percentage-box 	{ background:#000035; }
+		#dark-35 .percentage-box 	{ background:#00144f; }
+		#dark-25 .percentage-box 	{ background:#002d68; }
+		#dark-15 .percentage-box 	{ background:#0c4782; }
+		#dark-5 .percentage-box 	{ background:#25609b; }
+
+		#light-5 .percentage-box 	{ background:#3f7ab5; }
+		#light-15 .percentage-box 	{ background:#5893ce; }
+		#light-25 .percentage-box 	{ background:#72ade8; }
+		#light-35 .percentage-box 	{ background:#8bc6ff; }
+		#light-45 .percentage-box 	{ background:#a5e0ff; }
+		#light-65 .percentage-box 	{ background:#d8ffff; }
+
+	/* gradients
+	----------------------------------------------------------------- */
+	#gradients 						{  }
+	#gradient-example 				{ height:180px;
+		border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;
+		border:1px solid #0c4782;
+		background: #5893ce;
+		background: -moz-linear-gradient(top,  #5893ce 0%, #326da8 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5893ce), color-stop(100%,#326da8));
+		background: -webkit-linear-gradient(top,  #5893ce 0%,#326da8 100%);
+		background: -o-linear-gradient(top,  #5893ce 0%,#326da8 100%);
+		background: -ms-linear-gradient(top,  #5893ce 0%,#326da8 100%);
+		background: linear-gradient(to bottom,  #5893ce 0%,#326da8 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5893ce', endColorstr='#326da8',GradientType=0);
+	}
+
+	/* examples
+	----------------------------------------------------------------- */
+	#examples 						{ margin-bottom:20px; }
+
+		/* light button */
+		#light-button 				{ border:1px solid #0c4782; color:#d8ffff;
+			text-shadow:none; -moz-text-shadow:none; -webkit-text-shadow:none;
+			background: #5893ce;
+			background: -moz-linear-gradient(top,  #5893ce 0%, #326da8 100%);
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5893ce), color-stop(100%, #326da8));
+			background: -webkit-linear-gradient(top, #5893ce 0%, #326da8 100%);
+			background: -o-linear-gradient(top, #5893ce 0%, #326da8 100%);
+			background: -ms-linear-gradient(top, #5893ce 0%, #326da8 100%);
+			background: linear-gradient(to bottom, #5893ce 0%, #326da8 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5893ce', endColorstr='#326da8', GradientType=0); }
+		#light-button i 			{ color:#002d68; }
+
+		#dark-button 				{ border:1px solid #000002; color:#a5e0ff;
+			text-shadow:none; -moz-text-shadow:none; -webkit-text-shadow:none;
+			background: #002d68;
+			background: -moz-linear-gradient(top,  #002d68 0%, #000035 100%);
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #002d68), color-stop(100%, #000035));
+			background: -webkit-linear-gradient(top, #002d68 0%, #000035 100%);
+			background: -o-linear-gradient(top, #002d68 0%, #000035 100%);
+			background: -ms-linear-gradient(top, #002d68 0%, #000035 100%);
+			background: linear-gradient(to bottom, #002d68 0%, #000035 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#002d68', endColorstr='#000035', GradientType=0); }
+		#dark-button i 			{ color:#d8ffff; }
+
+		/*#light-button-modal, #dark-button-modal 		{ left:15%; width:70%; }*/
+
+	/* gradient creation
+	----------------------------------------------------------------- */
+	#gradient-creation 				{ margin-bottom:30px; }
+	#gradient-creation .btn-group 	{ margin-bottom:20px; margin-left:0; }
+
+		#gradient-text 				{ font-size:45px; margin-top:30px; }
+		#gradient-text i 			{ color:#000035; display:block; font-size:60px; margin-bottom:20px; }
+		#gradient-text span 		{ color:#d8ffff; font-family:'Lobster';
+			text-shadow:1px 1px 0 #000035; -moz-text-shadow:1px 1px 0 #000035; -webkit-text-shadow:1px 1px 0 #000035;
+		}
+
+	/* future
+	----------------------------------------------------------------- */
+
+/* MINICOLORS
+============================================================================= */
+.minicolors-theme-default.minicolors .minicolors-input 			{ width:200px; }
+.minicolors-panel 												{ border:5px solid #FFF; height:162px; top:70px; width:184px; }
+	.minicolors-picker 											{ background:#000; border:none; height:3px; width:20px; }
+	.minicolors-grid .minicolors-picker 						{ border:none; }
+.minicolors-swatch 												{ border:none; border-bottom:2px solid #DDD; height:62px; width:62px; }
+	.minicolors-theme-default.minicolors-focus .minicolors-swatch 	{ border-color:#DDD; }
+	.minicolors-swatch span 									{ box-shadow:none; -moz-box-shadow:none; -webkit-box-shadow:none; }
