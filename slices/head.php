@@ -9,6 +9,8 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 
 <title>Color Monster</title>
+
+<link rel="shortcut icon" href="favicon.ico">
 	
 <!-- SCROLLS -->
 <link rel="stylesheet" href="css/bootstrap.min.css">
